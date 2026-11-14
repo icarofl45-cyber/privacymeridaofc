@@ -1,7 +1,34 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.js" },
-    { "src": "/(.*)", "dest": "/$1" }
+  "rewrites": [
+    { "source": "/api/:match*", "destination": "/api/:match*" },
+    { "source": "/merida", "destination": "/01_merida/index.html" },
+    { "source": "/merida/(.*)", "destination": "/01_merida/$1" },
+    { "source": "/lorena", "destination": "/02_modelo/index.html" },
+    { "source": "/lorena/(.*)", "destination": "/02_modelo/$1" },
+    { "source": "/adrielle", "destination": "/03_modelo/index.html" },
+    { "source": "/adrielle/(.*)", "destination": "/03_modelo/$1" },
+    { "source": "/thais", "destination": "/04_modelo/index.html" },
+    { "source": "/thais/(.*)", "destination": "/04_modelo/$1" },
+    { "source": "/ayla", "destination": "/05_modelo/index.html" },
+    { "source": "/ayla/(.*)", "destination": "/05_modelo/$1" },
+    { "source": "/florinda", "destination": "/06_modelo/index.html" },
+    { "source": "/florinda/(.*)", "destination": "/06_modelo/$1" },
+    { "source": "/alana", "destination": "/07_modelo/index.html" },
+    { "source": "/alana/(.*)", "destination": "/07_modelo/$1" },
+    { "source": "/milena", "destination": "/08_modelo/index.html" },
+    { "source": "/milena/(.*)", "destination": "/08_modelo/$1" },
+    { "source": "/cris", "destination": "/09_modelo/index.html" },
+    { "source": "/cris/(.*)", "destination": "/09_modelo/$1" },
+    { "source": "/01_merida", "destination": "/01_merida/index.html" },
+    { "source": "/02_modelo", "destination": "/02_modelo/index.html" },
+    { "source": "/03_modelo", "destination": "/03_modelo/index.html" },
+    { "source": "/04_modelo", "destination": "/04_modelo/index.html" },
+    { "source": "/05_modelo", "destination": "/05_modelo/index.html" },
+    { "source": "/06_modelo", "destination": "/06_modelo/index.html" },
+    { "source": "/07_modelo", "destination": "/07_modelo/index.html" },
+    { "source": "/08_modelo", "destination": "/08_modelo/index.html" },
+    { "source": "/09_modelo", "destination": "/09_modelo/index.html" },
+    { "source": "/10_modelo", "destination": "/10_modelo/index.html" }
   ]
 }
